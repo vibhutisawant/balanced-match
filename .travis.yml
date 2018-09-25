@@ -11,4 +11,4 @@ node_js:
 
 allow_failures:
   - node_js: "0.12"
-    os: linux-ppc64le
+
