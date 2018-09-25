@@ -1,7 +1,14 @@
-os: linux-ppc64le
+os:
+ - linux 
+ - linux-ppc64le
+
 language: node_js
 node_js:
   - "0.12"
   - "4"
   - "5"
   - "6"
+
+allow_failures:
+  - node_js: "0.12"
+    os: linux-ppc64le
