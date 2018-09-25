@@ -3,12 +3,23 @@ os:
  - linux-ppc64le
 
 language: node_js
-node_js:
-  - "0.12"
-  - "4"
-  - "5"
-  - "6"
+#node_js:
+#  - "0.12"
+#  - "4"
+#  - "5"
+# - "6"
 
-allow_failures:
-  - node_js: "0.12"
+matrix:
+  include:
+   - node_js: 0.12
+   - node_js: 4
+   - node_js: 5
+   - node_js: 6
+
+  allow_failures:
+  - node_js: 0.12
+
+
+
+
 
