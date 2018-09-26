@@ -1,7 +1,3 @@
-os:
- - linux 
- - linux-ppc64le
-
 language: node_js
 #node_js:
 #  - "0.12"
@@ -11,14 +7,17 @@ language: node_js
 
 matrix:
   include:
-   - node_js: 
-    "0.12"
-    "4"
-    "5"
-    "6"
+   - os: linux
+     node_js: "0.12"
+     node_js: "4"
+   - os: linux-ppc64le
+     node_js: "4"
+   # "4"
+   # "5"
+   # "6"
 
-  allow_failures:
-  - node_js: "0.12"
+#  allow_failures:
+#  - node_js: "0.12"
 
 
 
